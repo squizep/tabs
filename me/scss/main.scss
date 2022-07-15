@@ -1,0 +1,75 @@
+@import 'nullstyle.scss';
+body {
+	background: linear-gradient(138.03deg, #5BC0B4 12.21%, #7B4284 92.36%);
+	color:white;
+}
+.tab {
+	display: flex;
+	flex-direction: column;
+	padding-top: 150px;
+	align-items: center;
+  &__title {
+		font-size: 70px;
+		font-weight: 600;
+	}
+  &__btn {
+		display: flex;
+		column-gap: 15px;
+	}
+  &__button {
+		border: 1px black solid;
+		margin: 15px 0;
+		padding: 15px 40px;
+		border-radius: 15px;
+	}
+	&__button.active {
+		color: white;
+		background-color: rgba(255, 255, 255, 0.25);
+	}
+  &__content {
+		height: 200px;
+		text-align: center;
+		border-radius: 15px;
+		width: 300px;
+		border: 1px black solid;
+	}
+  &__text {
+
+		font-size: 35px;
+		display: none;
+	}
+	&__text.active {
+		display: block;
+	}
+  &__text--btn {
+		display: inline-block;
+		margin-top: 5px;
+		border-radius: 15px;
+		font-size: 15px;
+		border: 1px black solid;
+
+		padding: 15px 40px;
+	}
+	&__text--btn.active {
+		color: white;
+		background-color: rgba(255, 255, 255, 0.25);
+	}
+	&__text2 {
+		display: none;
+		padding: 10px 0;
+		font-size: 35px;
+		button {
+			background-color: rgba(255, 255, 255, 0.25);
+			color: white;
+			border-radius: 10px;
+			padding: 5px;
+			font-size: 35px;
+			border: 1px black solid;
+		}
+	}
+	&__text2.active {
+		display: block;
+	}
+}
+
+
